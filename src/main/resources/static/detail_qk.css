@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e7eff6;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.main-info {
+    flex: 4; /* 更宽的主内容区 */
+    padding-right: 20px;
+}
+
+.journal-details, .call-for-papers {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.journal-details h2, .call-for-papers h2 {
+    text-align: center; /* 标题居中 */
+}
+
+.net {
+    text-align: center;
+}
+
+.info {
+    text-align: center; /* 基本信息文本居中 */
+    display: flex;
+    flex-direction: column; /* 改为一列布局 */
+    align-items: center; /* 居中对齐 */
+    gap: 10px; /* 格子间距 */
+}
+
+.info p, .small-details p {
+    background-color: #e0e0e0; /* 浅灰色背景 */
+    border-radius: 20px; /* 圆形边角 */
+    padding: 5px 10px; /* 调整填充 */
+    display: inline-block;
+    margin: 5px 0; /* 上下边距 */
+}
+
+#attention {
+    background-color: #2ecc71; /* 绿色背景 */
+    color: white;
+    padding: 5px 10px; /* 稍微增加填充，但不太大 */
+    border-radius: 50%; /* 完全圆形 */
+    font-size: 0.9em; /* 字体大小减小 */
+    margin-left: 5px; /* 确保与文字有些间距 */
+}
+
+#viewCount {
+    background-color: #f39c12; /* 橙色背景 */
+    color: white;
+    padding: 5px 10px; /* 稍微增加填充，但不太大 */
+    border-radius: 50%; /* 完全圆形 */
+    font-size: 0.9em; /* 字体大小减小 */
+    margin-left: 5px; /* 确保与文字有些间距 */
+}
+
+.sidebar {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+button {
+    width: 100%; /* 按钮宽度全满 */
+    padding: 15px; /* 增加按钮的填充，使其看起来更大 */
+    margin-top: 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}

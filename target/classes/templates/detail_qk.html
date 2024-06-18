@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>期刊详情</title>
+    <link rel="stylesheet" href="detail_qk.css">
+    <link rel="stylesheet" href="nav.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <a href="mainpage.html" style="text-decoration: none; color: inherit;">会伴——最新学术期刊与会议列表</a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="mainpage.html">首页</a></li>
+                    <li><a href="more_hy.html">会议</a></li>
+                    <li><a href="more_qk.html">期刊</a></li>
+                    <li id="loginContainer"><a href="login.html">登录</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="main-info">
+            <section class="journal-details">
+                <h2 id="journalName">[期刊全称]</h2>
+                <p class="net"><strong></strong> <a id="link" href="" target="_blank">[主页]</a></p>
+                <div class="info">
+                    <p><strong>出版商:</strong> <span id="publish">[出版商]</span></p>
+                    <p><strong>ISSN:</strong> <span id="issn">[ISSN]</span></p>
+                    <p><strong>浏览量:</strong> <span id="viewCount">[浏览量]</span></p>
+                    <p><strong>关注:</strong> <span id="attention">[关注]</span></p>
+                </div>
+            </section>
+            <section class="call-for-papers">
+                <h2>期刊征稿</h2>
+                <p id="callforpapers">详细的征稿信息...</p>
+            </section>
+        </div>
+        <aside class="sidebar">
+            <button id="followBtn">我要关注</button>
+        </aside>
+    </div>    
+
+    <script src="nav.js"></script>
+    <script src="detail_qk.js"></script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>注册</title>
+    <link rel="stylesheet" href="register.css">
+    <link rel="stylesheet" href="nav.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <a href="mainpage.html" style="text-decoration: none; color: inherit;">会伴——最新学术期刊与会议列表</a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="mainpage.html">首页</a></li>
+                    <li><a href="more_hy.html">会议</a></li>
+                    <li><a href="more_qk.html">期刊</a></li>
+                    <li id="loginContainer"><a href="login.html">登录</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <div class="register-container">
+        <form class="register-form" id="registerForm">
+            <h2>欢迎注册！请输入相关信息！</h2>
+            <label for="email">E-mail *</label>
+            <input type="email" id="email" placeholder="请输入您的邮箱" required>
+            <span class="error-message" id="emailError"></span>
+        
+            <label for="username">用户名 *</label>
+            <input type="text" id="username" placeholder="请输入您的用户名" required>
+            <span class="error-message" id="usernameError"></span>
+        
+            <label for="password">密码 *</label>
+            <input type="password" id="password" placeholder="请输入密码" required>
+            <span class="error-message" id="passwordError"></span>
+        
+            <label for="confirm-password">确认密码 *</label>
+            <input type="password" id="confirm-password" placeholder="请确认您的密码" required>
+            <span class="error-message" id="confirmPasswordError"></span>
+        
+            <label for="position">职位</label>
+            <input type="text" id="position" placeholder="您的职位（可选）">
+        
+            <label for="bio">自我介绍</label>
+            <textarea id="bio" placeholder="简单介绍一下自己（可选）"></textarea>
+        
+            <button type="button" onclick="submitRegistration()">注册</button>
+        </form>
+        
+    </div>
+    <script src="nav.js"></script>
+    <script src="register.js"></script>
+</body>
+</html>

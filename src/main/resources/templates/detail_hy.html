@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>会议详情</title>
+    <link rel="stylesheet" href="detail_hy.css">
+    <link rel="stylesheet" href="nav.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <a href="mainpage.html" style="text-decoration: none; color: inherit;">会伴——最新学术期刊与会议列表</a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="mainpage.html">首页</a></li>
+                    <li><a href="more_hy.html">会议</a></li>
+                    <li><a href="more_qk.html">期刊</a></li>
+                    <li id="loginContainer"><a href="login.html">登录</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="main-info">
+            <section class="conference-details">
+                <h2 id="conferenceName">[会议全称]</h2>
+                <div class="info">
+                    <p><strong>截稿日期:</strong> <span id="submissionDeadline">[截稿日期]</span></p>
+                    <p><strong>通知日期:</strong> <span id="notificationDate">[通知日期]</span></p>
+                    <p><strong>会议日期:</strong> <span id="conferenceDate">[会议日期]</span></p>
+                    <p><strong>会议地点:</strong> <span id="conferenceLocation">[会议地点]</span></p>
+                    <p><strong>届数:</strong> <span id="edition">[届数]</span></p>
+                    <p><strong>浏览量:</strong> <span id="viewCount">[浏览量]</span></p>
+                </div>
+            </section>
+            <section class="call-for-papers">
+                <h2>会议征稿</h2>
+                <p id="callforpapers">详细的征稿信息...</p>
+            </section>
+        </div>
+        <aside class="sidebar">
+            <button id="followBtn">我要关注</button>
+            <!--<button id="attendBtn">我要参加</button>!-->
+        </aside>
+    </div>
+
+    <script src="nav.js"></script>
+    <script src="detail_hy.js"></script>
+</body>
+</html>

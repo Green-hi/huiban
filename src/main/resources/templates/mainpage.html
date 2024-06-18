@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>主页</title>
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="display.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <a href="mainpage.html" style="text-decoration: none; color: inherit;">会伴——最新学术期刊与会议列表</a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="mainpage.html">首页</a></li>
+                    <li><a href="more_hy.html">会议</a></li>
+                    <li><a href="more_qk.html">期刊</a></li>
+                    <li id="loginContainer"><a href="login.html">登录</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <div class="slider-container">
+        <div class="mySlides fade">
+            <img src="welcome.png" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+            <img src="hy1.png" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+            <img src="hy2.png" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+            <img src="hy3.png" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+            <img src="hy4.png" style="width:100%">
+        </div>
+    
+        <!-- 添加指示器 -->
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span> 
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+        </div>
+    </div>
+    
+
+    <div class="conference-list">
+    <h2>会议列表</h2>
+    <table>
+        <colgroup>
+            <col style="width: 7.5%;">
+            <col style="width: 7.5%;">
+            <col style="width: 7.5%;">
+            <col style="width: 10%;">
+            <col style="width: 40%;">
+            <col style="width: 9%;">
+            <col style="width: 9%;">
+            <col style="width: 9%;">
+            <col style="width: 9%;">
+            <col style="width: 5%;">
+            <col style="width: 7%;">
+        </colgroup>
+        <thead>
+            <tr>
+                <th>CCF</th>
+                <th>CORE</th>
+                <th>QUALIS</th>
+                <th>简称</th>
+                <th>全称</th>
+                <th>截止日期</th>
+                <th>通知日期</th>
+                <th>会议日期</th>
+                <th>会议地点</th>
+                <th>届数</th>
+                <th>浏览量</th>
+            </tr>
+        </thead>
+        <tbody id="meeting-data">
+        </tbody>
+    </table>
+    <div class="more-link-container">
+        <a href="more_hy.html" class="more-link">>>查看更多</a>
+    </div>
+</div>
+<p style="height: 30px;"></p>
+<div class="conference-list">
+    <h2>期刊列表</h2>
+    <table>
+        <colgroup>
+            <col style="width: 7.5%;">
+            <col style="width: 10%;">
+            <col style="width: 40%;">
+            <col style="width: 9%;">
+            <col style="width: 9%;">
+            <col style="width: 9%;">
+            <col style="width: 7%;">
+        </colgroup>
+        <thead>
+            <tr>
+                <th>CCF</th>
+                <th>简称</th>
+                <th>全称</th>
+                <th>影响因子</th>
+                <th>出版商</th>
+                <th>ISSN</th>
+                <th>浏览量</th>
+            </tr>
+        </thead>
+        <tbody id="journal-data">
+        </tbody>
+    </table>
+    <div class="more-link-container">
+        <a href="more_qk.html" class="more-link">>>查看更多</a>
+    </div>
+</div>
+
+<script src="nav.js"></script>
+<script src="mainpage.js"></script>
+</body>
+</html>

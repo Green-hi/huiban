@@ -1,0 +1,79 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.register-container {
+    background: url('background.png') no-repeat center center fixed;
+    background-size: cover;
+    position: relative;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.register-form {
+    padding: 20px; /* 减少填充以缩小对话框的大小 */
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 350px; /* 稍微缩小宽度 */
+    margin-top: 30px; /* 添加上边距以降低对话框的位置 */
+}
+
+.register-form h2 {
+    text-align: center;
+    color: #007BFF;
+    font-size: 22px;
+}
+
+input[type="email"],
+input[type="text"],
+input[type="password"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+textarea {
+    height: 80px; /* 稍微减小高度 */
+}
+
+button {
+    padding: 10px 20px;
+    color: white;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+label {
+    align-self: flex-start;
+    font-size: 14px;
+}
+
+
+.error-message {
+    color: red;
+    font-size: 12px;
+}
+
+input.invalid, textarea.invalid {
+    border-color: red;
+}

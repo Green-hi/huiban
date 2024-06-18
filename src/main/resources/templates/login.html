@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>用户登录</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="nav.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <a href="mainpage.html" style="text-decoration: none; color: inherit;">会伴——最新学术期刊与会议列表</a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="mainpage.html">首页</a></li>
+                    <li><a href="more_hy.html">会议</a></li>
+                    <li><a href="more_qk.html">期刊</a></li>
+                    <li id="loginContainer"><a href="login.html">登录</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <div class="login-container">
+        <form class="login-form" id="loginForm">
+            <h2>Welcome!</h2>
+            <input type="email" id="emailInput" placeholder="用户邮箱" required>
+            <input type="password" id="passwordInput" placeholder="密码" required>
+            <button type="submit">登录</button>
+            <p class="register-prompt">还没有账号？<a href="register.html">注册</a></p>
+        </form>
+    </div>
+    
+    <script src="nav.js"></script>
+    <script src="login.js"></script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>期刊列表</title>
+    <link rel="stylesheet" href="more_hy.css">
+    <link rel="stylesheet" href="nav.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <a href="./mainpage.html" style="text-decoration: none; color: inherit;">会伴——最新学术期刊与会议列表</a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="./mainpage.html">首页</a></li>
+                    <li><a href="./more_hy.html">会议</a></li>
+                    <li><a href="./more_qk.html">期刊</a></li>
+                    <li id="loginContainer"><a href="./login.html">登录</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="journal-list">
+        <h2>期刊列表</h2>
+        <table>
+            <colgroup>
+                <col style="width: 7.5%;">
+                <col style="width: 10%;">
+                <col style="width: 40%;">
+                <col style="width: 9%;">
+                <col style="width: 9%;">
+                <col style="width: 9%;">
+                <col style="width: 7%;">
+            </colgroup>
+            <thead>
+                <tr>
+                    <th>CCF</th>
+                    <th>简称</th>
+                    <th>全称</th>
+                    <th>影响因子</th>
+                    <th>出版商</th>
+                    <th>ISSN</th>
+                    <th>浏览量</th>
+                </tr>
+            </thead>
+            <tbody id='journal-data'>
+            </tbody>
+        </table>
+    </div>
+    <div class="pagination">
+        <div id="pagination" class="pagination"></div>
+    </div>
+    
+    <p style="height: 30px;"></p>
+</body>
+    <script src="nav.js"></script>
+    <script src="more_qk.js"></script>
+</html>

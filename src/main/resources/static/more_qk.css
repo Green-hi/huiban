@@ -1,0 +1,48 @@
+.ccf-badge {
+    padding: 5px 10px;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    display: inline-block;
+    text-align: center;
+}
+
+.ccf-a {
+    background-color: #27ae60; /* 绿色 */
+}
+
+.ccf-b {
+    background-color: #f39c12; /* 橙色 */
+}
+
+.ccf-c {
+    background-color: #c0392b; /* 红色 */
+}
+
+
+.pagination {
+    display: flex;
+    justify-content: center; /* 居中显示 */
+    margin-top: 20px; /* 与上面的内容有一定间距 */
+}
+
+.pagination button {
+    padding: 10px 15px; /* 增加按钮的填充，使按钮更大 */
+    margin: 0 5px; /* 增加按钮之间的间隔 */
+    background-color: #007bff; /* 蓝色背景 */
+    color: white; /* 字体颜色白色 */
+    border: none; /* 无边框 */
+    border-radius: 5px; /* 边角圆滑 */
+    cursor: pointer; /* 鼠标悬停时指针样式 */
+    transition: background-color 0.3s; /* 平滑过渡效果 */
+}
+
+.pagination button:hover {
+    background-color: #0056b3; /* 鼠标悬停时背景色加深 */
+}
+
+.pagination button.active {
+    background-color: #ffc107; /* 当前页码的按钮使用黄色突出显示 */
+    color: #333; /* 活动按钮的文字颜色更深 */
+    font-weight: bold; /* 加粗字体突出显示 */
+}

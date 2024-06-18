@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>个人主页</title>
+    <link rel="stylesheet" href="person.css">
+    <link rel="stylesheet" href="nav.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <a href="./mainpage.html" style="text-decoration: none; color: inherit;">会伴——最新学术期刊与会议列表</a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="./mainpage.html">首页</a></li>
+                    <li><a href="./more_hy.html">会议</a></li>
+                    <li><a href="./more_qk.html">期刊</a></li>
+                    <li id="loginContainer"><a href="./login.html">登录</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <div class="welcome-container">
+        <h1 id="welcomeMessage">你好！<span id="userId">[用户邮箱]</span></h1>
+        <button class="logout-btn" onclick="logout()">注销</button>
+    </div>
+
+    <div class="personal-info">
+        <h2>基本信息</h2>
+        <table>
+            <tr>
+                <th>姓名</th>
+                <td id="userNameDisplay"></td>
+            </tr>
+            <tr>
+                <th>邮箱</th>
+                <td id="emailDisplay"></td>
+            </tr>
+            <tr>
+                <th>职位</th>
+                <td id="occupationDisplay"></td>
+            </tr>
+            <tr>
+                <th>注册时间</th>
+                <td id="createTimeDisplay"></td>
+            </tr>
+            <tr>
+                <th>自我介绍</th>
+                <td id="briefIntroductionDisplay"></td>
+            </tr>
+        </table>
+    </div>
+    
+    <div class="conference-list">
+        <h2>关注会议</h2>
+        <table>
+            <colgroup>
+                <col style="width: 7.5%;">
+                <col style="width: 7.5%;">
+                <col style="width: 7.5%;">
+                <col style="width: 10%;">
+                <col style="width: 40%;">
+                <col style="width: 9%;">
+                <col style="width: 9%;">
+                <col style="width: 9%;">
+                <col style="width: 9%;">
+                <col style="width: 5%;">
+                <col style="width: 7%;">
+                <col style="width: 7%;">
+            </colgroup>
+            <thead>
+                <tr>
+                    <th>CCF等级</th>
+                    <th>CORE等级</th>
+                    <th>QUALIS等级</th>
+                    <th>简称</th>
+                    <th>全称</th>
+                    <th>截止日期</th>
+                    <th>通知日期</th>
+                    <th>会议日期</th>
+                    <th>会议地点</th>
+                    <th>届数</th>
+                    <th>浏览量</th>
+                    <th>操作</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- 会议数据将通过JS动态加载 -->
+            </tbody>
+        </table>
+    </div>
+
+
+
+    <!-- todo-->
+
+
+
+    
+    <p style="height: 25px;"></p>
+    <div class="journal-list">
+        <h2>关注期刊</h2>
+        <table>
+            <colgroup>
+                <col style="width: 7.5%;">
+                <col style="width: 10%;">
+                <col style="width: 40%;">
+                <col style="width: 9%;">
+                <col style="width: 9%;">
+                <col style="width: 9%;">
+                <col style="width: 7%;">
+                <col style="width: 5%;">
+            </colgroup>
+            <thead>
+                <tr>
+                    <th>CCF</th>
+                    <th>简称</th>
+                    <th>全称</th>
+                    <th>影响因子</th>
+                    <th>出版商</th>
+                    <th>ISSN</th>
+                    <th>浏览量</th>
+                    <th>操作</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- 会议数据将通过JS动态加载 -->
+            </tbody>
+        </table>
+    </div>
+    <script src="nav.js"></script>
+    <script src="person.js"></script>
+</body>
+</html>
