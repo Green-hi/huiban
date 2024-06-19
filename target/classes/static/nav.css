@@ -37,6 +37,32 @@ nav ul li a {
     color: wheat;
     text-decoration: none;
 }
+
+.search-form {
+    display: flex;
+    align-items: center;
+}
+
+.search-form input[type="text"] {
+    padding: 5px 10px;
+    margin-right: 5px;
+    border: none;
+    border-radius: 5px;
+}
+
+.search-form button {
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.search-form button:hover {
+    background-color: #0056b3;
+}
+
 /*__________________________________________*/
 .conference-list {
     margin: 20px;
@@ -123,3 +149,41 @@ table tr:nth-child(even) {
     text-decoration: underline; /* 鼠标悬停时显示下划线 */
     color: #0056b3; /* 鼠标悬停时的颜色变化 */
 }
+
+/*__________________________________________*/
+
+.statistics-container {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 20px 0;
+    padding: 10px 0;
+    background-color: #007BFF; /* 蓝色背景 */
+}
+
+.stat-item {
+    text-align: center;
+    color: white;
+    font-size: 1.5em;
+}
+
+.stat-item p {
+    margin-top: 5px;
+    font-size: 16px; /* 字体放大 */
+    color: #ffffff;
+}
+
+.stat-item span {
+    display: block;
+    font-weight: bold;
+    font-size: 2em;
+}
+
+.stat-item a {
+    color: white; /* 保持链接文字颜色 */
+    text-decoration: none; /* 去除下划线 */
+}
+
+.stat-item a:hover span {
+    text-decoration: underline; /* 鼠标悬停时出现下划线 */
+}
+

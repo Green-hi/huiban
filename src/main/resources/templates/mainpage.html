@@ -10,34 +10,49 @@
     <header>
         <div class="navbar">
             <div class="logo">
-                <a href="mainpage.html" style="text-decoration: none; color: inherit;">会伴——最新学术期刊与会议列表</a>
+                <a href="./mainpage.html" style="text-decoration: none; color: inherit;">会伴——最新学术期刊与会议列表</a>
             </div>
+            <form id="searchForm" class="search-form">
+                <input type="text" id="searchInput" placeholder="搜索会议或期刊..." required>
+                <button type="submit">搜索</button>
+            </form>
             <nav>
                 <ul>
-                    <li><a href="mainpage.html">首页</a></li>
-                    <li><a href="more_hy.html">会议</a></li>
-                    <li><a href="more_qk.html">期刊</a></li>
-                    <li id="loginContainer"><a href="login.html">登录</a></li>
+                    <li><a href="./mainpage.html">首页</a></li>
+                    <li><a href="./more_hy.html">会议</a></li>
+                    <li><a href="./more_qk.html">期刊</a></li>
+                    <li id="loginContainer"><a href="./login.html">登录</a></li>
                 </ul>
             </nav>
         </div>
     </header>
     
+    
     <div class="slider-container">
         <div class="mySlides fade">
-            <img src="welcome.png" style="width:100%">
+            <a href="./mainpage.html">
+                <img src="./welcome.png" style="width:100%">
+            </a>
         </div>
         <div class="mySlides fade">
-            <img src="hy1.png" style="width:100%">
+            <a href="http://www.icneom.org/" target="_blank">
+                <img src="./hy1.png" style="width:100%">
+            </a>
         </div>
         <div class="mySlides fade">
-            <img src="hy2.png" style="width:100%">
+            <a href="https://www.icaicv.org/" target="_blank">
+                <img src="./hy2.png" style="width:100%">
+            </a>
         </div>
         <div class="mySlides fade">
-            <img src="hy3.png" style="width:100%">
+            <a href="https://www.aceee.net/" target="_blank">
+                <img src="./hy3.png" style="width:100%">
+            </a>
         </div>
         <div class="mySlides fade">
-            <img src="hy4.png" style="width:100%">
+            <a href="https://icbbs.org/" target="_blank">
+                <img src="./hy4.png" style="width:100%">
+            </a>
         </div>
     
         <!-- 添加指示器 -->
@@ -49,6 +64,31 @@
             <span class="dot" onclick="currentSlide(5)"></span>
         </div>
     </div>
+    
+    
+    <div class="statistics-container">
+        <div class="stat-item">
+            <a href="more_hy.html" id="totalConferencesLink">
+                <span id="totalConferences">4810</span>
+            </a>
+            <p>会议</p>
+        </div>
+        <div class="stat-item">
+            <a href="more_qk.html" id="totalJournalsLink">
+                <span id="totalJournals">1118</span>
+            </a>
+            <p>期刊</p>
+        </div>
+        <div class="stat-item">
+            <span id="totalUsers">149</span>
+            <p>用户</p>
+        </div>
+        <div class="stat-item">
+            <span id="totalViews">3481</span>
+            <p>浏览量</p>
+        </div>
+    </div>
+    
     
 
     <div class="conference-list">

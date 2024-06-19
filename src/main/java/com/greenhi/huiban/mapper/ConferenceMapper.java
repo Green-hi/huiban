@@ -7,4 +7,5 @@ import java.util.List;
 
 public interface ConferenceMapper extends BaseMapper<Conference> {
     List<Conference> selectByName(String name);
+    Integer countView();
 }

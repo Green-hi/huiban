@@ -6,6 +6,7 @@ com\greenhi\huiban\service\ScheduleService.class
 com\greenhi\huiban\config\MyWebAppConfigurer$1.class
 com\greenhi\huiban\service\impl\ScheduleServiceImpl.class
 com\greenhi\huiban\mapper\ScheduleMapper.class
+com\greenhi\huiban\item\NumBase.class
 com\greenhi\huiban\entity\Conference.class
 com\greenhi\huiban\mapper\ConferenceMapper.class
 com\greenhi\huiban\service\FollowService.class

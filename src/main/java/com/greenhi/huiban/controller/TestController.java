@@ -24,6 +24,10 @@ public class TestController {
     public String detail_qk(){
         return "detail_qk";
     }
+    @RequestMapping(value = {"/detail_search.html","/detail_search"})
+    public String detail_search(){
+        return "detail_search";
+    }
     @RequestMapping(value = {"/login.html","/login"})
     public String login(){
         return "login";

@@ -15,6 +15,7 @@ D:\ideaProjects\huiban-backend\src\main\java\com\greenhi\huiban\entity\Conferenc
 D:\ideaProjects\huiban-backend\src\main\java\com\greenhi\huiban\service\ConferenceService.java
 D:\ideaProjects\huiban-backend\src\main\java\com\greenhi\huiban\controller\ScheduleController.java
 D:\ideaProjects\huiban-backend\src\main\java\com\greenhi\huiban\service\impl\ConferenceServiceImpl.java
+D:\ideaProjects\huiban-backend\src\main\java\com\greenhi\huiban\item\NumBase.java
 D:\ideaProjects\huiban-backend\src\main\java\com\greenhi\huiban\unit\RandomUnit.java
 D:\ideaProjects\huiban-backend\src\main\java\com\greenhi\huiban\service\impl\FollowServiceImpl.java
 D:\ideaProjects\huiban-backend\src\main\java\com\greenhi\huiban\config\MyWebAppConfigurer.java

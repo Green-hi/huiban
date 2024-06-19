@@ -3,7 +3,9 @@ package com.greenhi.huiban.service.impl;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
+import com.greenhi.huiban.entity.Conference;
 import com.greenhi.huiban.entity.User;
+import com.greenhi.huiban.item.NumBase;
 import com.greenhi.huiban.mapper.UserMapper;
 import com.greenhi.huiban.service.UserService;
 import com.greenhi.huiban.unit.Result;
@@ -100,6 +102,13 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements Us
             return ResultUtil.success("用户数据更新成功");
         }
         return ResultUtil.error(ResultEnum.DATA_NOT_EXISTS.getCode(), ResultEnum.DATA_NOT_EXISTS.getMsg());
+    }
+
+    @Override
+    public Result countNum() {
+        return ResultUtil.success(baseMapper.selectCount(null));
+
+        //return ResultUtil.error(ResultEnum.DATA_NOT_EXISTS.getCode(), ResultEnum.DATA_NOT_EXISTS.getMsg());
     }
 
 }

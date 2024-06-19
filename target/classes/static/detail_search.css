@@ -1,0 +1,59 @@
+.search-results h2, .search-results h3 {
+    color: #0061a1;
+    padding-left: 20px;
+}
+
+.search-results table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.search-results th, .search-results td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.search-results th {
+    background-color: #f4f4f4;
+}
+
+.search-results tbody tr:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+
+.search-results a {
+    color: #0061a1;
+    text-decoration: none;
+}
+.search-results a:hover {
+    text-decoration: underline;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center; /* 居中显示 */
+    margin-top: 20px; /* 与上面的内容有一定间距 */
+}
+
+.pagination button {
+    padding: 10px 15px; /* 增加按钮的填充，使按钮更大 */
+    margin: 0 5px; /* 增加按钮之间的间隔 */
+    background-color: #007bff; /* 蓝色背景 */
+    color: white; /* 字体颜色白色 */
+    border: none; /* 无边框 */
+    border-radius: 5px; /* 边角圆滑 */
+    cursor: pointer; /* 鼠标悬停时指针样式 */
+    transition: background-color 0.3s; /* 平滑过渡效果 */
+}
+
+.pagination button:hover {
+    background-color: #0056b3; /* 鼠标悬停时背景色加深 */
+}
+
+.pagination button.active {
+    background-color: #ffc107; /* 当前页码的按钮使用黄色突出显示 */
+    color: #333; /* 活动按钮的文字颜色更深 */
+    font-weight: bold; /* 加粗字体突出显示 */
+}
+

@@ -1,7 +1,8 @@
 document.addEventListener('DOMContentLoaded', function() {
-    fetchMeetings();
     setupImageSlider();
+    fetchMeetings();
     fetchJournals();
+    fetchStats();
 
     function fetchMeetings() {
         fetch('http://47.100.138.113:7777/conference/getAllPagingCon?pageNo=1&pageSize=10', {
@@ -73,8 +74,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 <td>${record.ccflevel || ''}</td>
                 <td>${shortNameDisplay || ''}</td>
                 <td><a href="detail_qk.html?journalId=${record.id}" style="text-decoration: underline;">${record.name}</a></td>
-                <td>${record.influence || ''}</td>
-                <td>${record.publish || ''}</td>
+                <td>${record.impactFactor || ''}</td>
+                <td>${record.publisher || ''}</td>
                 <td>${record.issn || ''}</td>
                 <td>${record.views || ''}</td>
             </tr>`;
@@ -112,4 +113,29 @@ document.addEventListener('DOMContentLoaded', function() {
 
         setInterval(() => showSlides(++slideIndex), 5000);  // Change image every 3 seconds
     }
+
+    function fetchStats() {
+        // 获取用户总数
+        fetch('http://47.100.138.113:7777/user/count')
+        .then(response => response.json())
+        .then(data => {
+            if (data.code === 100) {
+                document.getElementById('totalUsers').textContent = data.data || 0;
+            }
+        })
+        .catch(error => console.error('Error fetching user count:', error));
+    
+        // 获取会议总数、期刊总数和总浏览量
+        fetch('http://47.100.138.113:7777/conference/count')
+        .then(response => response.json())
+        .then(data => {
+            if (data.code === 100 && data.data) {
+                document.getElementById('totalConferences').textContent = data.data.conNum.toLocaleString() || '0';
+                document.getElementById('totalJournals').textContent = data.data.jorNum.toLocaleString() || '0';
+                document.getElementById('totalViews').textContent = data.data.viewNum.toLocaleString() || '0';
+            }
+        })
+        .catch(error => console.error('Error fetching conference/journal/view counts:', error));
+    }
+    
 });

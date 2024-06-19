@@ -51,6 +51,10 @@ public class ConferenceController {
         return service.update(conference);
     }
 
+    @RequestMapping(value = "/count",method = RequestMethod.GET)
+    public Result count(){
+        return service.countNum();
+    }
 
 }
 

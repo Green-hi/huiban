@@ -32,4 +32,10 @@
         from conference
         where name like '%${name}%'
     </select>
+
+    <select id="countView" resultType="java.lang.Integer">
+        select sum(views)
+        from conference
+
+    </select>
 </mapper>

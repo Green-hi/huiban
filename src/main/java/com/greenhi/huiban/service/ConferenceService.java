@@ -20,4 +20,6 @@ public interface ConferenceService extends IService<Conference> {
 
     Result update(Conference conference);
 
+    Result countNum();
+
 }

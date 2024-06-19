@@ -4,6 +4,7 @@ import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.greenhi.huiban.entity.Conference;
+import com.greenhi.huiban.item.NumBase;
 import com.greenhi.huiban.mapper.ConferenceMapper;
 import com.greenhi.huiban.service.ConferenceService;
 import com.greenhi.huiban.unit.Result;
@@ -100,6 +101,19 @@ public class ConferenceServiceImpl extends ServiceImpl<ConferenceMapper, Confere
             return ResultUtil.success("会议数据更新成功");
         }
         return ResultUtil.error(ResultEnum.DATA_NOT_EXISTS.getCode(), ResultEnum.DATA_NOT_EXISTS.getMsg());
+    }
+
+    @Override
+    public Result countNum() {
+        NumBase numBase = new NumBase();
+        numBase.setConNum(baseMapper.selectCount(new QueryWrapper<Conference>()
+                .eq("type", "0")));
+        numBase.setJorNum(baseMapper.selectCount(new QueryWrapper<Conference>()
+                .eq("type", "1")));
+        numBase.setViewNum(baseMapper.countView());
+        return ResultUtil.success(numBase);
+
+        //return ResultUtil.error(ResultEnum.DATA_NOT_EXISTS.getCode(), ResultEnum.DATA_NOT_EXISTS.getMsg());
     }
 
 }

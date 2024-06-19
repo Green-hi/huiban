@@ -27,8 +27,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 <td>${journal.ccflevel || ''}</td>
                 <td>${shortNameDisplay}</td>
                 <td><a href="detail_qk.html?journalId=${journal.id}" style="text-decoration: underline;">${journal.name}</a></td>
-                <td>${journal.influence || ''}</td>
-                <td>${journal.publish || ''}</td>
+                <td>${journal.impactFactor || ''}</td>
+                <td>${journal.publisher || ''}</td>
                 <td>${journal.issn || ''}</td>
                 <td>${journal.views || ''}</td>
             </tr>`;

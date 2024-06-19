@@ -19,4 +19,6 @@ public interface UserService extends IService<User> {
     Result selectOneById(String id);
 
     Result update(User userBase);
+
+    Result countNum();
 }

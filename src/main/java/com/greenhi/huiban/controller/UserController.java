@@ -68,5 +68,10 @@ public class UserController {
         request.getSession().setAttribute("verifyCode", shearCaptcha.getCode());
     }
 
+    @RequestMapping(value = "/count",method = RequestMethod.GET)
+    public Result count(){
+        return service.countNum();
+    }
+
 }
 

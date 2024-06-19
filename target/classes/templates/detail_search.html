@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>搜索结果</title>
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="detail_search.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <a href="./mainpage.html" style="text-decoration: none; color: inherit;">会伴——最新学术期刊与会议列表</a>
+            </div>
+            <form id="searchForm" class="search-form">
+                <input type="text" id="searchInput" placeholder="搜索会议或期刊..." required>
+                <button type="submit">搜索</button>
+            </form>
+            <nav>
+                <ul>
+                    <li><a href="./mainpage.html">首页</a></li>
+                    <li><a href="./more_hy.html">会议</a></li>
+                    <li><a href="./more_qk.html">期刊</a></li>
+                    <li id="loginContainer"><a href="./login.html">登录</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="conference-list">
+        <h2 class="results">搜索结果</h2>
+        <p style="height: 20px;"></p>
+        <div>
+            <h2>会议</h2>
+            <table>
+                <colgroup>
+                    <col style="width: 7.5%;">
+                    <col style="width: 7.5%;">
+                    <col style="width: 7.5%;">
+                    <col style="width: 10%;">
+                    <col style="width: 40%;">
+                    <col style="width: 9%;">
+                    <col style="width: 9%;">
+                    <col style="width: 9%;">
+                    <col style="width: 9%;">
+                    <col style="width: 5%;">
+                    <col style="width: 7%;">
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th>CCF等级</th>
+                        <th>CORE等级</th>
+                        <th>QUALIS等级</th>
+                        <th>简称</th>
+                        <th>全称</th>
+                        <th>截止日期</th>
+                        <th>通知日期</th>
+                        <th>会议日期</th>
+                        <th>会议地点</th>
+                        <th>届数</th>
+                        <th>浏览量</th>
+                    </tr>
+                </thead>
+                <tbody id="conference-data">
+                    <!-- 会议数据将通过JS动态加载 -->
+                </tbody>
+            </table>
+        </div>
+        <p style="height: 20px;"></p>
+        <div>
+            <h2>期刊</h2>
+            <table>
+                <colgroup>
+                    <col style="width: 7.5%;">
+                    <col style="width: 10%;">
+                    <col style="width: 40%;">
+                    <col style="width: 9%;">
+                    <col style="width: 9%;">
+                    <col style="width: 9%;">
+                    <col style="width: 7%;">
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th>CCF</th>
+                        <th>简称</th>
+                        <th>全称</th>
+                        <th>影响因子</th>
+                        <th>出版商</th>
+                        <th>ISSN</th>
+                        <th>浏览量</th>
+                    </tr>
+                </thead>
+                <tbody id="journal-data">
+                    <!-- 期刊数据将通过JS动态加载 -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+    
+
+<script src="nav.js"></script>
+<script src="detail_search.js"></script>
+</body>
+</html>
