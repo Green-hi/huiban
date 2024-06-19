@@ -16,6 +16,8 @@ public interface ConferenceService extends IService<Conference> {
 
     Result selectById(String id);
 
+    Result selectByName(String name);
+
     Result update(Conference conference);
 
 }

@@ -13,6 +13,7 @@ import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.stereotype.Service;
 
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 @Service
@@ -72,6 +73,16 @@ public class ConferenceServiceImpl extends ServiceImpl<ConferenceMapper, Confere
     public Result selectById(String id) {
         Conference conferenceBase = getOne(new QueryWrapper<Conference>()
                 .eq("id", id));
+        if (conferenceBase == null) {
+            return ResultUtil.error(ResultEnum.DATA_NOT_EXISTS.getCode(), ResultEnum.DATA_NOT_EXISTS.getMsg());
+        } else {
+            return ResultUtil.success(conferenceBase);
+        }
+    }
+
+    @Override
+    public Result selectByName(String name) {
+        List<Conference> conferenceBase = baseMapper.selectByName(name);
         if (conferenceBase == null) {
             return ResultUtil.error(ResultEnum.DATA_NOT_EXISTS.getCode(), ResultEnum.DATA_NOT_EXISTS.getMsg());
         } else {

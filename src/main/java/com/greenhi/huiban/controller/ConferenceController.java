@@ -38,7 +38,12 @@ public class ConferenceController {
 
     @RequestMapping(value = "/selectById",method = RequestMethod.GET)
     public Result selectById(String id){
-        return service.selectById(id) ;
+        return service.selectById(id);
+    }
+
+    @RequestMapping(value = "/selectByName",method = RequestMethod.GET)
+    public Result selectByName(String name){
+        return service.selectByName(name);
     }
 
     @RequestMapping(value = "/update",method = RequestMethod.POST)

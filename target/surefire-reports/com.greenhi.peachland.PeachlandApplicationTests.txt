@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: com.greenhi.peachland.PeachlandApplicationTests
 -------------------------------------------------------------------------------
-Tests run: 3, Failures: 0, Errors: 3, Skipped: 0, Time elapsed: 0.053 s <<< FAILURE! - in com.greenhi.peachland.PeachlandApplicationTests
-initializationError(com.greenhi.peachland.PeachlandApplicationTests)  Time elapsed: 0.004 s  <<< ERROR!
+Tests run: 3, Failures: 0, Errors: 3, Skipped: 0, Time elapsed: 0.093 s <<< FAILURE! - in com.greenhi.peachland.PeachlandApplicationTests
+initializationError(com.greenhi.peachland.PeachlandApplicationTests)  Time elapsed: 0.006 s  <<< ERROR!
 java.lang.Exception: The class com.greenhi.peachland.PeachlandApplicationTests is not public.
 
 initializationError(com.greenhi.peachland.PeachlandApplicationTests)  Time elapsed: 0 s  <<< ERROR!
